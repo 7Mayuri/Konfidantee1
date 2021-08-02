@@ -243,14 +243,203 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Mobile Navigation 
 */
-.mobile-nav-toggle {
-  color: #fff;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
+body {
+  background: #fff;
+  font-family: 'Raleway', sans-serif;
 }
+
+::selection {
+  background: #5fb759;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #5fb759;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
+}
+
+a.main-stroked-button {
+  font-size: 13px;
+  border-radius: 25px;
+  padding: 11px 25px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a.main-stroked-button:hover {
+  background-color: #fff;
+  color: #5fb759;
+}
+
+a.main-filled-button {
+  font-size: 13px;
+  border-radius: 25px;
+  padding: 13px 25px;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #5fb759;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a.main-filled-button:hover {
+  color: #fff;
+  background-color: #5fb759;
+}
+
+a.main-button-icon {
+  font-size: 13px;
+  border-radius: 25px;
+  padding: 13px 25px;
+  background-color: #5fb759;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a.main-button-icon i {
+  margin-left: 5px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a.main-button-icon:hover i {
+  padding-left: 5px;
+}
+
+button.main-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 25px;
+  padding: 10px 25px;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #5fb759;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.main-button:hover {
+  color: #fff;
+  background-color: #5fb759;
+}
+
+button.main-button-icon {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  border-radius: 25px;
+  padding: 13px 25px;
+  background-color: #5fb759;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button.main-button-icon i {
+  margin-left: 5px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+button.main-button-icon:hover i {
+  padding-left: 5px;
+}
+
+a.text-button-icon {
+  text-transform: uppercase;
+  color: #1e1e1e;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+a.text-button-icon i {
+  margin-left: 5px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a.text-button-icon:hover {
+  color: #5fb759;
+}
+
+a.text-button-icon:hover i {
+  padding-left: 5px;
+}
+
+
+.section-heading h6 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
 
 
 
