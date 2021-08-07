@@ -1,10 +1,6 @@
-
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
+  color: #444444;
 }
 
 a {
@@ -116,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-size: 14px;
   white-space: nowrap;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .navbar a i, .navbar a:focus i {
@@ -194,11 +190,61 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Mobile Navigation 
 */
+
+/*mine*/
+
+.menu {
+  visibility: hidden;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/*mine*/
+
+
+
 .mobile-nav-toggle {
-  color: #fff;
+  /* color: #fff; */
   font-size: 28px;
   cursor: pointer;
-  display: none;
+  display: flex;
   line-height: 0;
   transition: 0.5s;
 }
@@ -209,6 +255,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .navbar ul {
     display: none;
+  }
+  .menu{
+    visibility: visible;
   }
 }
 
@@ -238,6 +287,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
+  background-color: transparent;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -245,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 15px;
-  color: #f2f2f2;
+  color: white;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
@@ -1509,4 +1559,3 @@ section {
   background: #ffce3a;
   text-decoration: none;
 }
-
