@@ -1,9 +1,4 @@
-/**
-* Template Name: Baker - v4.3.0
-* Template URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -115,8 +110,8 @@
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    // this.classList.toggle('bi-list')
+    // this.classList.toggle('bi-x')
   })
 
   /**
@@ -139,9 +134,9 @@
       let navbar = select('#navbar')
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        // let navbarToggle = select('.mobile-nav-toggle')
+        // navbarToggle.classList.toggle('bi-list')
+        // navbarToggle.classList.toggle('bi-x')
       }
       scrollto(this.hash)
     }
