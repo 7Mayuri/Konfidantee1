@@ -833,6 +833,16 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active-button
 {background: #ffce3a;}
+.checked {
+  color: orange;
+
+}
+.swiper-wrapper.disabled {
+    transform: translate3d(0px, 0, 0) !important;
+}
+.swiper-pagination.disabled {
+    display: 8;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
