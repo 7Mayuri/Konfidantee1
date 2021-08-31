@@ -569,8 +569,14 @@ section {
 }
 
 .about p {
+   border-radius: 25px;
+    border: #ffc107;
+    padding: 7px; 
+    width: 197px;
+    height: 15px; 
   font-size: 15px;
-  color: #848484;
+  color: #ffc107;
+
 }
 
 /*--------------------------------------------------------------
@@ -833,15 +839,27 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active-button
 {background: #ffce3a;}
-.checked {
-  color: orange;
+.testimonials .swiper-pagination .swiper-pagination-bullet-active-button:hover{
+  background-color: yellow;
+
+}
+.checked:hover {
+  color: #ffc107;
+  
 
 }
 .swiper-wrapper.disabled {
     transform: translate3d(0px, 0, 0) !important;
 }
-.swiper-pagination.disabled {
+.swiper-pagination.disabled{
     display: 8;
+    
+
+}
+.testimonials.btn-buy: hover{
+
+  background-color: yellow;
+
 }
 /*--------------------------------------------------------------
 # Portfolio
