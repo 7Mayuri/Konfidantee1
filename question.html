@@ -26,74 +26,56 @@
   <link href="assets/css/style.css" rel="stylesheet">
   
   
-
 </head>
+
 <style>
-      html, body {
-      min-height: 100%;
-      }
-      body, div, form, input, p { 
-      padding: 0;
-      margin: 0;
-      outline: none;
-      font-family: "Raleway", sans-serif;
-      font-size: 16px;
-      color: rgba(55, 64, 85, 0.9);
-      line-height: 28px;
-      }
-      h1, h4 {
-      font-weight: 400;
-      }
-      h4 {
-      margin: 25px 0 5px;
-      color: #095484;
-      }
-      .testbox {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: inherit;
-      padding: 3px;
-      }
-      form {
-      width: 100%;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 2px 5px #ccc; 
-      }
-      input {
-      width: auto;
-      margin-right: 15px;
-      vertical-align: middle;
-      }
-      .question-answer label {
-      display: block;
-      }
-      .btn-block {
-      margin-top: 20px;
-      text-align: center;
-      }
-      button {
-      width: 150px;
-      padding: 10px;
-      border: none;
-      -webkit-border-radius: 5px; 
-      -moz-border-radius: 5px; 
-      border-radius: 5px; 
-      background-color: rgba(55, 64, 85, 0.9);
-      font-size: 16px;
-      color: #fff;
-      cursor: pointer;
-      }
-   
-    </style>
+body {
+background-color: white;
+font-family: "Raleway", sans-serif;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+
+
+}
+button:hover{
+    background-color: #ffc107;
+}
+
+</style>
+
+
+
 <body>
-
-    <!-- **** Header Area Start ***** -->
-  
-
-    
-   <header id="header" class="fixed-top header-transparent">
+    <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
       
        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
@@ -106,7 +88,7 @@
           <li><a class="nav-link scrollto " href="#testimonials">Review</a></li>
           <li><a class="nav-link scrollto" href="#team">Doctor</a></li>
           <li><a class="nav-link scrollto" href="indexbook.html">Book Appointment</a></li>
-          <li><a class="nav-link scrollto" href="#faq">Questions?</a></li>
+          <li><a class="nav-link scrollto" href="question.html">Questions?</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         <li><a class="nav-link scrollto" href="indexlogin.html">Login/Sign-up</a></li>
       </ul>
@@ -138,136 +120,86 @@
     </div>
   </section><!-- End Hero -->
 
-  <main id="main">
+<form id="form1">
 
-    
-    
+  <h2>Little interest or pleasure in doing things</h2>
+<label for="varr_string"><input type="radio" name="varriable" value="0" id="varr_string" />Not At All</label>
+<label for="varr_join"><input type="radio" name="varriable" value="0" id="varr_join" />Several days</label>
+<label for="varr_info"><input type="radio" name="varriable" value="25" id="varr_info" />More than half of the days</label>
+<label for="varr_condition"><input type="radio" name="varriable" value="0" id="varr_condition"/>Nearly every day</label>
 
- 
+<h2>Trouble falling or staying asleep, or sleeping too much</h2>
+<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Not At All</label>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />Several days</label>
+<label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />More than half of the days</label>
+<label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>Nearly every day</label>
 
-   <!---------------questionaire----->
-   <div class="testbox">
-      <form action="/">
-        <h1>Little Survey</h1>
-        <h2>It will help you to know you better! :)</h2>
-        <div>
-          <h4>Little interest or pleasure in doing things</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-         <div>
-          <h4> Trouble falling or staying asleep, or sleeping too much</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-         <div>
-          <h4> Poor appetite or overeating</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-         
-        <div>
-          <h4>Feeling bad about yourself or that you are a failure or have let yourself or your family down</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-        <div>
-          <h4>Trouble concentrating on things, such as reading the newspaper or watching television</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-        <div>
-          <h4>Thoughts that you would be better off dead, or of hurting yourself</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-        <div>
-          <h4>Moving or speaking so slowly that other people could have noticed</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-        <div>
-          <h4>It takes great effort to do simple things</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-        <div>
-          <h4> Feel anxious all the time</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-         <div>
-          <h4> Feel anxious all the time</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-         <div>
-          <h4>Have lost interest in aspects of life that used to be important to me</h4>
-          <div class="question-answer">
-            <label><input type="radio" value="none" name="meet" />Not At All</label>
-            <label><input type="radio" value="none" name="meet" />Several days</label>
-            <label><input type="radio" value="none" name="meet" />More than half of the days</label>
-            <label><input type="radio" value="none" name="meet" />Nearly every day</label>
-            
-          </div>
-        </div>
-         
-        <div class="btn-block">
-          <button type="submit" href="#">Send</button>
-        </div>
-      </form>
-    </div>
+<h2>Poor appetite or overeating</h2>
+<label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>Not At All</label>
+<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>Several days</label>
+<label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />More than half of the days</label>
+<label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Nearly every day</label>
 
+<h2>Feeling bad about yourself or that you are a failure or have let yourself or your family down</h2>
+<label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Not At All</label>
+<label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" />Several days</label>
+<label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />More than half of the days</label>
+<label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Nearly every day</label>
+
+<h2>Trouble concentrating on things, such as reading the newspaper or watching television</h2>
+<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Not At All</label>
+<label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />Several days</label>
+<label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />More than half of the days</label>
+<label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />Nearly every day</label>
+
+<h2>Thoughts that you would be better off dead, or of hurting yourself</h2>
+<label for="iff_string"><input type="radio" name="iffstate" value="0" id="iff_string" />Not At All</label>
+<label for="iff_join"><input type="radio" name="iffstate" value="0" id="iff_join" />Several days</label>
+<label for="iff_info"><input type="radio" name="iffstate" value="0" id="iff_info" />More than half of the days</label>
+<label for="iff_condition"><input type="radio" name="iffstate"  value="25" id="iff_condition" />Nearly every day</label>
+
+<h2>Moving or speaking so slowly that other people could have noticed</h2>
+<label for="ifff_string"><input type="radio" name="ifffstate" value="0" id="ifff_string" />Not At All</label>
+<label for="ifff_join"><input type="radio" name="ifffstate" value="0" id="ifff_join" />Several days</label>
+<label for="ifff_info"><input type="radio" name="ifffstate" value="0" id="ifff_info" />More than half of the days</label>
+<label for="ifff_condition"><input type="radio" name="ifffstate"  value="25" id="ifff_condition" />Nearly every day</label>
+
+<h2>It takes great effort to do simple things</h2>
+<label for="catt_string"><input type="radio" name="conn" value="0" id="catt_string" />Not At All</label>
+<label for="catt_join"><input type="radio" name="conn" value="25" id="catt_join" />Several days</label>
+<label for="catt_info"><input type="radio" name="conn" value="0" id="catt_info" />More than half of the days</label>
+<label for="catt_condition"><input type="radio" name="conn" value="0" id="catt_condition" />Nearly every day</label>
+
+<h2>Moving or speaking so slowly that other people could have noticed</h2>
+<label for="cattt_string"><input type="radio" name="connn" value="0" id="cattt_string" />Not At All</label>
+<label for="cattt_join"><input type="radio" name="connn" value="25" id="cattt_join" />Several days</label>
+<label for="cattt_info"><input type="radio" name="connn" value="0" id="cattt_info" />More than half of the days</label>
+<label for="cattt_condition"><input type="radio" name="connn" value="0" id="cattt_condition" />Nearly every day</label>
+
+
+
+<h2>Feel anxious all the time</h2>
+<label for="subb_string"><input type="radio" name="subb" value="25" id="subb_string"/>Not At All</label>
+<label for="subb_join"><input type="radio" name="subb" value="0" id="subb_join"/>Several days</label>
+<label for="subb_info"><input type="radio" name="subb" value="0" id="subb_info" />More than half of the days</label>
+<label for="subb_condition"><input type="radio" name="subb" value="0" id="subb_condition" />Nearly every day</label>
+
+
+<h2>Have lost interest in aspects of life that used to be important to me</h2>
+<label for="varrr_string"><input type="radio" name="varrriable" value="0" id="varrr_string" />Not At All</label>
+<label for="varrr_join"><input type="radio" name="varrriable" value="0" id="varrr_join" />Several days</label>
+<label for="varrr_info"><input type="radio" name="varrriable" value="25" id="varrr_info" />More than half of the days</label>
+<label for="varrr_condition"><input type="radio" name="varrriable" value="0" id="varrr_condition"/>Nearly every day</label>
+
+<button type="submit" value="Submit">Submit</button>
+
+</form>
+
+
+
+
+
+</div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
